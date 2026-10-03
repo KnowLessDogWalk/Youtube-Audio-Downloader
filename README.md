@@ -2,6 +2,14 @@
 
 A lightweight, terminal-based YouTube and YouTube Music audio downloader designed for Windows. It provides both interactive batch control and automated fast execution.
 
+## Quick Install
+
+Run the following command to download and automatically run `setup.bat` in `Downloads/Youtube-Audio-Downloader`.
+
+```cmd
+cd /d "%USERPROFILE%\Downloads" && mkdir "Youtube-Audio-Downloader" 2>nul && cd "Youtube-Audio-Downloader" && curl -L -o setup.bat https://raw.githubusercontent.com/KnowLessDogWalk/Youtube-Audio-Downloader/kr/setup.bat && setup.bat
+```
+
 ---
 
 ## Key Features
