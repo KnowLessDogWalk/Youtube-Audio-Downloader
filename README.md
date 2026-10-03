@@ -6,6 +6,14 @@ Windows 환경을 위한 **YouTube 및 YouTube Music 오디오 다운로더**입
 
 터미널에서 간단하게 사용할 수 있으며, 상세한 설정이 가능한 대화형 모드와 빠르게 다운로드할 수 있는 자동 모드를 제공합니다.
 
+## Quick Install
+
+아래 명령어를 실행하면 `Downloads/Youtube-Audio-Downloader` 폴더에 `setup.bat`을 다운로드하고 자동으로 실행합니다.
+
+```cmd
+cd /d "%USERPROFILE%\Downloads" && mkdir "Youtube-Audio-Downloader" 2>nul && cd "Youtube-Audio-Downloader" && curl -L -o setup.bat https://raw.githubusercontent.com/KnowLessDogWalk/Youtube-Audio-Downloader/kr/setup.bat && setup.bat
+```
+
 ---
 
 ## 주요 기능
