@@ -116,6 +116,18 @@ if not exist "config.txt" (
 ) else (
     echo      - config.txt 설정 파일: 준비됨
 )
+
+if not exist "about.txt" (
+    echo      - about.txt 손실됨 -> GitHub 원격 저장소에서 자동 복구 중...
+    curl -s -L -o "about.txt" "%RAW_BASE_URL%/about.txt"
+    if exist "about.txt" (
+        echo      - about.txt 복구 완료.
+    ) else (
+        echo [오류] about.txt 복구 실패. 원격 저장소를 확인해 주세요.
+    )
+) else (
+    echo      - about.txt: 정상
+)
 echo.
 
 echo ============================================================
