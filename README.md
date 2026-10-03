@@ -1,7 +1,5 @@
 # YouTube Audio Downloader (v0.3 Beta)
 
-# 한국어 가이드
-
 Windows 환경을 위한 **YouTube 및 YouTube Music 오디오 다운로더**입니다.
 
 터미널에서 간단하게 사용할 수 있으며, 상세한 설정이 가능한 대화형 모드와 빠르게 다운로드할 수 있는 자동 모드를 제공합니다.
