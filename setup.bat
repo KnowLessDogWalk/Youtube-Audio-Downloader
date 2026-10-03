@@ -116,6 +116,18 @@ if not exist "config.txt" (
 ) else (
     echo      - config.txt configuration file: Ready
 )
+
+if not exist "about.txt" (
+    echo      - about.txt missing -> Restoring from GitHub remote repository...
+    curl -s -L -o "about.txt" "%RAW_BASE_URL%/about.txt"
+    if exist "about.txt" (
+        echo      - about.txt restored successfully.
+    ) else (
+        echo [ERROR] Failed to restore about.txt. Please check the remote repository.
+    )
+) else (
+    echo      - about.txt: OK
+)
 echo.
 
 echo ============================================================
