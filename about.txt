@@ -1,0 +1,68 @@
+============================================================
+YouTube Audio Downloader
+============================================================
+
+A personal terminal program for downloading
+audio from YouTube and YouTube Music.
+
+[Program Information]
+
+Name    : YouTube Audio Downloader
+Version : v0.3 Beta
+Platform: Windows
+Format  : Command Line (main.bat / fast.bat)
+
+[Key Features]
+
+* YouTube / YouTube Music URL audio downloading
+* Original audio saving and various quality conversion options (MP3, WAV)
+* Automatic audio quality and save location management (config.txt)
+* Interactive settings and command support (main.bat)
+* Multi-download support (batch input, comma-separated)
+* Automatic failure classification and smart re-download menu
+* Ultra-fast automatic download mode without confirmation (fast.bat)
+
+[Execution Scripts]
+
+main.bat
+An interactive main script supporting quality selection,
+save location changes, pre-download confirmation (Y/N),
+and multi-input mode.
+
+fast.bat
+An ultra-fast automatic script that starts downloading
+immediately without confirmation and automatically retries failures.
+
+[External Dependency Files]
+
+yt-dlp.exe
+Media stream extraction and download engine
+
+ffmpeg.exe
+Audio conversion and encoding engine
+
+[Creator & Developer]
+
+Developer : KnowLessDogWalk
+GitHub    : [https://github.com/KnowLessDogWalk](https://github.com/KnowLessDogWalk)
+Made by   : apple_pie
+
+
+If you encounter any errors or problems while using the program,
+please share the situation and error message through the contact above.
+
+[AI Usage Notice]
+
+AI assistance was used during the development of this program
+(code writing, error fixing, and feature design).
+Final review and testing were conducted directly by the creator.
+
+[Copyright & Usage Notice]
+
+The use of downloaded content is subject to the terms of service
+and copyright laws of each respective service.
+Please use the program only in compliance with applicable laws and service terms.
+
+============================================================
+v0.3 Beta
+============================================================
