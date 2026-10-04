@@ -10,8 +10,6 @@ Run the following command to download and automatically run `setup.bat` in `Down
 cd /d "%USERPROFILE%\Downloads" && mkdir "Youtube-Audio-Downloader" 2>nul && cd "Youtube-Audio-Downloader" && curl -L -o setup.bat https://raw.githubusercontent.com/KnowLessDogWalk/Youtube-Audio-Downloader/en/setup.bat && setup.bat
 ```
 
-Quick Install may currently omit README.md and create unnecessary files. This does not affect usage; please refer to the file structure below to re-download missing files and delete unnecessary files.
-
 ---
 
 ## Key Features
