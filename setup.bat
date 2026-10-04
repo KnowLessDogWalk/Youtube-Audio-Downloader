@@ -70,7 +70,7 @@ echo.
 echo [4/5] 메인 실행 스크립트(main.bat, fast.bat)의 무결성을 검사합니다...
 
 if not exist "main.bat" (
-    echo      - main.bat 손실됨 -> GitHub 원격 저장소에서 자동 복구 중...
+    echo      - main.bat 손실됨 -^> GitHub 원격 저장소에서 자동 복구 중...
     curl -s -L -o "main.bat" "%RAW_BASE_URL%/main.bat"
     if exist "main.bat" (
         echo      - main.bat 복구 완료.
@@ -82,7 +82,7 @@ if not exist "main.bat" (
 )
 
 if not exist "fast.bat" (
-    echo      - fast.bat 손실됨 -> GitHub 원격 저장소에서 자동 복구 중...
+    echo      - fast.bat 손실됨 -^> GitHub 원격 저장소에서 자동 복구 중...
     curl -s -L -o "fast.bat" "%RAW_BASE_URL%/fast.bat"
     if exist "fast.bat" (
         echo      - fast.bat 복구 완료.
@@ -118,7 +118,7 @@ if not exist "config.txt" (
 )
 
 if not exist "about.txt" (
-    echo      - about.txt 손실됨 -> GitHub 원격 저장소에서 자동 복구 중...
+    echo      - about.txt 손실됨 -^> GitHub 원격 저장소에서 자동 복구 중...
     curl -s -L -o "about.txt" "%RAW_BASE_URL%/about.txt"
     if exist "about.txt" (
         echo      - about.txt 복구 완료.
@@ -128,6 +128,19 @@ if not exist "about.txt" (
 ) else (
     echo      - about.txt: 정상
 )
+
+if not exist "README.md" (
+    echo      - README.md 손실됨 -^> GitHub 원격 저장소에서 자동 복구 중...
+    curl -s -L -o "README.md" "%RAW_BASE_URL%/README.md"
+    if exist "README.md" (
+        echo      - README.md 복구 완료.
+    ) else (
+        echo [오류] README.md 복구 실패. 원격 저장소를 확인해 주세요.
+    )
+) else (
+    echo      - README.md: 정상
+)
+
 echo.
 
 echo ============================================================
