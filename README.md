@@ -12,6 +12,8 @@ Windows 환경을 위한 **YouTube 및 YouTube Music 오디오 다운로더**입
 cd /d "%USERPROFILE%\Downloads" && mkdir "Youtube-Audio-Downloader" 2>nul && cd "Youtube-Audio-Downloader" && curl -L -o setup.bat https://raw.githubusercontent.com/KnowLessDogWalk/Youtube-Audio-Downloader/kr/setup.bat && setup.bat
 ```
 
+현재 Quick Install 실행 시 README.md가 누락되고 불필요한 파일이 생성될 수 있습니다. 사용에는 문제가 없으며, 아래 파일 구조를 참고하여 누락된 파일을 다시 다운로드하고 불필요한 파일은 삭제해 주세요.
+
 ---
 
 ## 주요 기능
