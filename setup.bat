@@ -70,7 +70,7 @@ echo.
 echo [4/5] Checking the integrity of the main scripts (main.bat, fast.bat)...
 
 if not exist "main.bat" (
-    echo      - main.bat missing -> Automatically restoring from the GitHub repository...
+    echo      - main.bat missing -^> Automatically restoring from the GitHub repository...
     curl -s -L -o "main.bat" "%RAW_BASE_URL%/main.bat"
     if exist "main.bat" (
         echo      - main.bat restoration complete.
@@ -82,7 +82,7 @@ if not exist "main.bat" (
 )
 
 if not exist "fast.bat" (
-    echo      - fast.bat missing -> Automatically restoring from the GitHub repository...
+    echo      - fast.bat missing -^> Automatically restoring from the GitHub repository...
     curl -s -L -o "fast.bat" "%RAW_BASE_URL%/fast.bat"
     if exist "fast.bat" (
         echo      - fast.bat restoration complete.
@@ -118,7 +118,7 @@ if not exist "config.txt" (
 )
 
 if not exist "about.txt" (
-    echo      - about.txt missing -> Restoring from GitHub remote repository...
+    echo      - about.txt missing -^> Restoring from GitHub remote repository...
     curl -s -L -o "about.txt" "%RAW_BASE_URL%/about.txt"
     if exist "about.txt" (
         echo      - about.txt restored successfully.
@@ -128,6 +128,19 @@ if not exist "about.txt" (
 ) else (
     echo      - about.txt: OK
 )
+
+if not exist "README.md" (
+    echo      - README.md missing -^> Restoring from GitHub remote repository...
+    curl -s -L -o "README.md" "%RAW_BASE_URL%/README.md"
+    if exist "README.md" (
+        echo      - README.md restored successfully.
+    ) else (
+        echo [ERROR] Failed to restore README.md. Please check the remote repository.
+    )
+) else (
+    echo      - README.md: OK
+)
+
 echo.
 
 echo ============================================================
