@@ -2,6 +2,8 @@
 
 A lightweight, terminal-based YouTube and YouTube Music audio downloader designed for Windows. It provides both interactive batch control and automated fast execution.
 
+한국어 버전은 [kr 브랜치](https://github.com/KnowLessDogWalk/Youtube-Audio-Downloader/tree/kr)에서 확인할 수 있습니다!
+
 ## Quick Install
 
 Run the following command to download and automatically run `setup.bat` in `Downloads/Youtube-Audio-Downloader`.
