@@ -12,6 +12,8 @@ Windows 환경을 위한 **YouTube 및 YouTube Music 오디오 다운로더**입
 cd /d "%USERPROFILE%\Downloads" && mkdir "Youtube-Audio-Downloader" 2>nul && cd "Youtube-Audio-Downloader" && curl -L -o setup.bat https://raw.githubusercontent.com/KnowLessDogWalk/Youtube-Audio-Downloader/kr/setup.bat && setup.bat
 ```
 
+지정된 경로에 Youtube-Audio-Downloader 폴더가 이미 존재하는 경우 설치가 중단될 수 있습니다.
+
 ---
 
 ## 주요 기능
