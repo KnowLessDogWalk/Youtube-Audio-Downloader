@@ -12,6 +12,8 @@ Run the following command to download and automatically run `setup.bat` in `Down
 cd /d "%USERPROFILE%\Downloads" && mkdir "Youtube-Audio-Downloader" 2>nul && cd "Youtube-Audio-Downloader" && curl -L -o setup.bat https://raw.githubusercontent.com/KnowLessDogWalk/Youtube-Audio-Downloader/en/setup.bat && setup.bat
 ```
 
+If a Youtube-Audio-Downloader folder already exists in the specified path, the installation may stop.
+
 ---
 
 ## Key Features
